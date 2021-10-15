@@ -58,7 +58,10 @@ public class Main {
     public static int[] aufgerundet(int[] noten){
         int[] noten1 = new int[noten.length];
         for (int i=0; i<noten.length; i++){
-            if (noten[i] < 38) continue;
+            if (noten[i] < 38) {
+                noten1[i] = noten[i];
+                continue;
+            }
             int dif = 5 - noten[i] % 5;
             if (dif < 3) {
                 noten1[i]=noten[i] + dif;
