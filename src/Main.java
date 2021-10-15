@@ -26,8 +26,12 @@ public class Main {
         System.out.println(note_aufgerundet_max);
     }
 
-    //Functie care primeste un array de variabile de tip int si returneaza un alt array cu toate variabilele care sunt
-    //mai mici decat 40
+    /**
+     * Functie care primeste un array de variabile de tip int si returneaza un alt
+     * array cu toate elementele care sunt mai mici decat 40
+     * @param noten array de int-uri care reprezinta notele
+     * @return array cu notele care nu au trecut
+     */
     public static int[] aufgabe1(int[] noten) {
         int[] noten1 = new int[noten.length];
         int j=0;
@@ -44,7 +48,11 @@ public class Main {
         return noten2;
     }
 
-    //functia primeste un array de int-uri, face suma tuturor numerelor si imparte suma la lungime
+    /**
+     * functia primeste un array de int-uri, face suma tuturor numerelor si imparte suma la lungime
+     * @param noten array cu noten
+     * @return media aritmetica a tuturor notelor
+     */
     public static int average(int[] noten){
         int s=0;
         for (int i=0; i<noten.length; i++){
@@ -53,8 +61,12 @@ public class Main {
         return (s / noten.length);
     }
 
-    //functia primeste un array de int-uri, trece prin array si face calculeaza distanta catre cel mai apropriat
-    //multiplu de al lui 5, dupa care sa ia daca sa rotunjeasca in sus sau nu
+    /**
+     * functia trece prin array si face calculeaza distanta catre cel mai apropriat
+     * multiplu de al lui 5, dupa care sa ia daca sa rotunjeasca in sus sau nu
+     *  @param noten
+     * @return array cu note rotunjite
+     */
     public static int[] aufgerundet(int[] noten){
         int[] noten1 = new int[noten.length];
         for (int i=0; i<noten.length; i++){
@@ -72,9 +84,12 @@ public class Main {
         return noten1;
     }
 
-    //functia primeste un array de int-uri, trece prin array si face calculeaza distanta catre cel mai apropriat
-    //multiplu de al lui 5, dupa care sa ia daca sa rotunjeasca in sus sau nu. Returneaza cel mai mare int din
-    //array-ul rotunjit
+    /**
+     * functia trece prin array si calculeaza distanta catre cel mai apropriat
+     * multiplu de al lui 5, dupa care sa ia daca sa rotunjeasca in sus sau nu
+     * @param noten array cu noten
+     * @return cel mai mare int din array-ul rotunjit
+     */
     public static int max_aufgerundet(int[] noten){
         int[] noten1 = new int[noten.length];
         for (int i=0; i<noten.length; i++){
